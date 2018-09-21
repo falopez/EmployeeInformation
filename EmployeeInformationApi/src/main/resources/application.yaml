@@ -1,0 +1,5 @@
+springfox.documentation.swagger.v2.path: /api-docs
+server.contextPath: /base
+server.port: 8081
+spring.view.prefix: /WEB-INF/jsp/
+spring.view.suffix: .jsp

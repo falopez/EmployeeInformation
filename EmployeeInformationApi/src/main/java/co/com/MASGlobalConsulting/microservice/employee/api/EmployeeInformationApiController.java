@@ -47,8 +47,6 @@ public class EmployeeInformationApiController implements EmployeeInformationApi 
         	log.error(e.getMessage(), e);
         	return apiResponseMessage.createResponseEntityErrors(e.getMessage(), String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR.value())
         			, idRequest);
-		}
-        
+		}        
     }
-
 }

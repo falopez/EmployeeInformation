@@ -45,8 +45,7 @@ public class ApiResponseMessage {
 	}
 
 	public ResponseEntity<GetEmployeeResponse> createResponseAllEmployeeOK(String idRequest,
-			List<EmployeeDTO> listEmployeeDTO) {
-		
+			List<EmployeeDTO> listEmployeeDTO) {		
 		GetEmployeeResponse getEmployeeResponse = new GetEmployeeResponse();
 		List<ResponseData> listResponseData = new ArrayList<>();
 		listEmployeeDTO.forEach(item -> setEmployee(listResponseData, item, idRequest));

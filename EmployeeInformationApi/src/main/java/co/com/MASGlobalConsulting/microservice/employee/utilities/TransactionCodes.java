@@ -3,8 +3,7 @@ package co.com.MASGlobalConsulting.microservice.employee.utilities;
 public enum TransactionCodes {
 		
 	INTERNAL_SERVER_ERROR("500", "INTERNAL_SERVER_ERROR"),
-	USER_NOT_FOUND("001", "USER NOT FOUND");
-	
+	USER_NOT_FOUND("001", "USER NOT FOUND");	
 	
 	private String code;
 	private String message;

@@ -2,25 +2,16 @@ package com.app.model;
 
 public class EmployeeDTO {
 
-	  private String idRequest = null; 	 
-	
-	  private String id = null;
-
-	  private String name = null;
-
-	  private String contractTypeName = null;
-
-	  private String roleId = null;
-
-	  private String roleName = null;
-
-	  private String roleDescription = null;
-
-	  private String hourlySalary = null;
-
-	  private String monthlySalary = null;
-
-	  private String annualSalary = null;
+	private String idRequest;
+	private String id;
+	private String name;
+	private String contractTypeName;
+	private String roleId;
+	private String roleName;
+	private String roleDescription;
+	private String hourlySalary;
+	private String monthlySalary;
+	private String annualSalary;
 
 	public String getId() {
 		return id;

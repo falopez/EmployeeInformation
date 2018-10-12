@@ -3,7 +3,7 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <footer class="footer">
     <div class="container">
-        <p class="text-muted">Fabián López</p>
+        <p class="text-muted">On-line shop</p>
     </div>
 </footer>
 </body>

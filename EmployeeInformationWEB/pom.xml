@@ -19,6 +19,7 @@
 		<start-class>com.app.Application</start-class>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
+		<docker.image.prefix>spring-java4dev</docker.image.prefix>
 	</properties>
 
 	<dependencies>
@@ -64,6 +65,22 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.4.10</version>
+				<configuration>
+					<mainClass>com.springjava4dev.docker.SpringbootDockerStarterApplication</mainClass>
+					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+					<dockerDirectory>src/main</dockerDirectory>
+					<resources>
+						<resource>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
